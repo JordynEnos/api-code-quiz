@@ -127,14 +127,6 @@ const quizQuestions = [
     }
   }
   
-  //choices incorrect or correct? 
-  $.each(quizQuestions, function(index, question) {
-    $.each(question.choices, function(index, choice) {
-      var className = choice.isCorrect ? "correct" : "incorrect";
-      var choiceElement = $("<div>").addClass("choice " + className).text(choice.text);
-      // Append the choiceElement to the DOM for this question
-    });
-  });
   
   function handleChoiceClick(event) {
     if (!event.target.matches(".choice")) return;
@@ -157,33 +149,33 @@ const quizQuestions = [
     }
   }
   
-  // Initialize scores array
-  let scores = [];
+ // Initialize scores array
+let scores = [];
+
+// Listen for form submission event
+gameOverScreen.addEventListener("submit", function(event) {
+  event.preventDefault(); // Prevent form from submitting and refreshing the page
   
-  // Listen for form submission event
-  gameOverScreen.addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevent form from submitting and refreshing the page
-    
-    // Get user input
-    const initials = initialsInput.value;
-    const score = scoreInput.value;
-    
-    // Add score to array
-    scores.push({ initials, score });
-    
-    // Sort scores in descending order
-    scores.sort((a, b) => b.score - a.score);
-    
-    // Clear scores list
-    scoresList.innerHTML = "";
-    
-    // Show high scores section
-    highScoresSection.classList.remove("hidden");
-    
-    // Add each score to the list
-    scores.forEach(function(score) {
-      const listItem = document.createElement("li");
-      listItem.textContent = `${score.initials}: ${score.score}`;
-      scoresList.appendChild(listItem);
-    });
+  // Get user input
+  const initials = initialsInput.value;
+  const score = scoreInput.value;
+  
+  // Add score to array
+  scores.push({ initials, score });
+  
+  // Sort scores in descending order
+  scores.sort((a, b) => b.score - a.score);
+  
+  // Clear scores list
+  scoresList.innerHTML = "";
+  
+  // Show high scores section
+  highScoresSection.classList.remove("hidden");
+  
+  // Add each score to the list
+  scores.forEach(function(score) {
+    const listItem = document.createElement("li");
+    listItem.textContent = `${score.initials}: ${score.score}`;
+    scoresList.appendChild(listItem);
+  });
   });
