@@ -1,1 +1,52 @@
-asdf
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JavaScript Quiz</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>JavaScript Quiz</h1>
+    </header>
+    <main>
+      <section id="start-screen">
+        <h2>Welcome to the JavaScript Quiz!</h2>
+        <button id="start-btn">Start Quiz</button>
+      </section>
+      <section id="quiz-screen" class="hidden">
+        <div id="timer-container">
+          <p id="timer">Time: 60</p>
+        </div>
+        <h2 id="question">Question 1</h2>
+        <ul id="choices">
+          <li><button class="choice correct">Answer 1</button></li>
+          <li><button class="choice">Answer 2</button></li>
+          <li><button class="choice">Answer 3</button></li>
+          <li><button class="choice">Answer 4</button></li>
+        </ul>
+      </section>
+      <section id="game-over-screen" class="hidden">
+        <h2>Game Over!</h2>
+
+        <form>
+          <label for="initials">Enter your initials:</label>
+          <input type="text" id="initials" name="initials" required>
+          <label for="score">Enter your score:</label>
+          <input type="text" id="score" name="score" required>
+          <button id="submit-score">Submit Score</button>
+        </form>
+      </section>
+
+      <section id="high-scores" class="hidden">
+        <h2>High Scores</h2>
+        <ul id="scores-list"></ul>
+      </section>
+    </section>
+
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

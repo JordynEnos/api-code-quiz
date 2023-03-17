@@ -1,1 +1,106 @@
-asdf
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  background-color: #b7d4db;
+  margin: 0;
+}
+
+header {
+  background-color: #103464;
+  color: #f8f8f8;
+  padding: 1rem;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  color: #f8f8f8;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  margin: 0;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+section {
+  border: 1px solid #92b7a6;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: #f8f8f8;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hidden {
+  display: none;
+}
+
+#start-btn,
+#submit-score {
+  background-color: #28728f;
+  color: #f8f8f8;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+#start-btn:hover,
+#submit-score:hover {
+  background-color: #0b626b;
+}
+
+#timer-container {
+  text-align: right;
+}
+
+#timer {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+.choice {
+  background-color: #f8f8f8;
+  color: #333;
+  border: 1px solid #92b7a6;
+  padding: 0.75rem;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+.choice:hover {
+  background-color: #eee;
+}
+
+.correct {
+  background-color: #c2e8c8;
+}
+
+.incorrect {
+  background-color: #f8b8b8;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+input[type="text"] {
+  padding: 0.5rem;
+  font-family: "Helvetica Neue", sans-serif;
+  border: 1px solid #92b7a6;
+  border-radius: 0.25rem;
+}
