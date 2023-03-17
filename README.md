@@ -24,6 +24,11 @@ This project is a timed coding quiz application that tests the user's knowledge 
 
 ![Screenshot of Game Over & High Score](https://github.com/JordynEnos/api-code-quiz/blob/441af827fdaa12a0ef73c5a20d1b1736240fdbbb/game-over-screenshot.png)
 
+## Deployed Application
+
+[Deployed Application Link](https://jordynenos.github.io/api-code-quiz/)
+
+
 ## Credits
 
 JordynEnos (Jordyn Enos)
