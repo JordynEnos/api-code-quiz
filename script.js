@@ -127,6 +127,15 @@ const quizQuestions = [
     }
   }
   
+  //choices incorrect or correct? 
+  $.each(quizQuestions, function(index, question) {
+    $.each(question.choices, function(index, choice) {
+      var className = choice.isCorrect ? "correct" : "incorrect";
+      var choiceElement = $("<div>").addClass("choice " + className).text(choice.text);
+      // Append the choiceElement to the DOM for this question
+    });
+  });
+  
   function handleChoiceClick(event) {
     if (!event.target.matches(".choice")) return;
     const selectedAnswer = event.target.textContent;
