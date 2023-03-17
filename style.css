@@ -67,22 +67,30 @@ section {
 
 li {
   margin-bottom: 0.5rem;
+  list-style: none;
 }
 
 .choice {
-  background-color: #f8f8f8;
-  color: #333;
-  border: 1px solid #92b7a6;
-  padding: 0.75rem;
-  width: 100%;
-  text-align: left;
-  cursor: pointer;
-  font-family: "Helvetica Neue", sans-serif;
-}
-
-.choice:hover {
-  background-color: #eee;
-}
+    display: inline-block;
+    width: 100%;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    color: #333;
+    border: 1px solid #92b7a6;
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    cursor: pointer;
+    font-family: "Helvetica Neue", sans-serif;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .choice:hover {
+    background-color: #eee;
+  }
 
 .correct {
   background-color: #c2e8c8;
