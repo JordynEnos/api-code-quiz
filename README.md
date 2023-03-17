@@ -18,11 +18,14 @@ This project is a timed coding quiz application that tests the user's knowledge 
 
 ## Usage (Screenshot)
 
-![Screenshot of Welcome Page](https://github.com/JordynEnos/api-code-quiz/blob/441af827fdaa12a0ef73c5a20d1b1736240fdbbb/welcome-screenshot.png)
+![Screenshot of Welcome Page](https://github.com/JordynEnos/api-code-quiz/blob/7515fff611c5f288e36400987dae260147cab19f/welcome-page-screenshot.png)
 
-![Screenshot of Question Sample](https://github.com/JordynEnos/api-code-quiz/blob/441af827fdaa12a0ef73c5a20d1b1736240fdbbb/question-sample-screenshot.png)
+![Screenshot of Question Sample](https://github.com/JordynEnos/api-code-quiz/blob/7515fff611c5f288e36400987dae260147cab19f/sample-question-screenshot.png)
 
-![Screenshot of Game Over & High Score](https://github.com/JordynEnos/api-code-quiz/blob/441af827fdaa12a0ef73c5a20d1b1736240fdbbb/game-over-screenshot.png)
+![Screenshot of Initials Input](https://github.com/JordynEnos/api-code-quiz/blob/7515fff611c5f288e36400987dae260147cab19f/input-initials-screenshot.png)
+
+![Screenshot of High Score Log](https://github.com/JordynEnos/api-code-quiz/blob/7515fff611c5f288e36400987dae260147cab19f/highscore-log-screenshot.png)
+
 
 ## Deployed Application
 
