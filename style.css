@@ -21,6 +21,20 @@ h1 {
   margin: 0;
 }
 
+h2 {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 1.5rem;
+    color:#103464;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+h3 {
+    font-family: "Helvetica Neue", sans-serif;
+    color: #599ab4;
+    margin-left: 25px;
+    margin-top: -8px;
+}
+
 main {
   max-width: 800px;
   margin: 0 auto;
